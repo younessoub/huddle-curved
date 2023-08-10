@@ -91,6 +91,7 @@ header {
 
 h1 {
   color: var(--VeryDarkCyan);
+  font-size: 1.6rem;
 }
 
 .intro-section p {
@@ -109,6 +110,10 @@ h1 {
 
 .body-cta:hover {
   background-color: var(--LightPink);
+}
+
+h2{
+  font-size: 1.2rem;
 }
 
 .stats-section {
@@ -168,19 +173,19 @@ h1 {
 }
 
 .feature-main>div:nth-child(1) {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 .feature-main.no-background>div:nth-child(1) {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .feature-main>div:nth-child(2) {
-  transform: translateX(100%);
+  transform: translateX(-100%);
 }
 
 .feature-main.no-background>div:nth-child(2) {
-  transform: translateX(-100%);
+  transform: translateX(100%);
 }
 
 
@@ -299,6 +304,14 @@ footer {
     width: 20vw;
   }
 
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
   .stats {
     flex-direction: row;
     justify-content: center;
@@ -311,8 +324,12 @@ footer {
     text-align: left;
   }
 
-  .feature-main.no-background {
+  .feature-main{
     flex-direction: row-reverse;
+  }
+
+  .feature-main.no-background {
+    flex-direction: row;
   }
 
   .footer-flex {
