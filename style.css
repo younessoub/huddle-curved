@@ -56,6 +56,10 @@ h3 {
 
 /* utility classes end */
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -154,8 +158,35 @@ h1 {
   color: var(--VeryDarkCyan);
 }
 
+.feature-main>div {
+  transition: all 1.5s ease;
+  opacity: 0;
+}
+
 .feature-main:not(.no-background) {
   background-color: var(--VeryPaleBlue);
+}
+
+.feature-main>div:nth-child(1) {
+  transform: translateX(-100%);
+}
+
+.feature-main.no-background>div:nth-child(1) {
+  transform: translateX(100%);
+}
+
+.feature-main>div:nth-child(2) {
+  transform: translateX(100%);
+}
+
+.feature-main.no-background>div:nth-child(2) {
+  transform: translateX(-100%);
+}
+
+
+.feature-main>div.reveal {
+  transform: translateX(0%);
+  opacity: 1;
 }
 
 .feature-text p {
@@ -201,19 +232,18 @@ footer {
 .form input {
   width: 100%;
   outline: none;
-}
-
-.form input,
-.form button {
-  padding: 10px 40px;
+  padding: 10px 20px;
   border-radius: 5px;
   border: none;
 }
 
 .form button {
+  padding: 10px 40px;
   background-color: var(--Pink);
   color: white;
   font-weight: 700;
+  border-radius: 5px;
+  border: none;
 }
 
 .form button:hover {
