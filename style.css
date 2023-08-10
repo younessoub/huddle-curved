@@ -159,7 +159,7 @@ h1 {
 }
 
 .feature-main>div {
-  transition: all 1.5s ease;
+  transition: all 1s ease;
   opacity: 0;
 }
 
@@ -185,8 +185,8 @@ h1 {
 
 
 .feature-main>div.reveal {
-  transform: translateX(0%);
-  opacity: 1;
+  transform: translateX(0%) !important;
+  opacity: 1 !important;
 }
 
 .feature-text p {
